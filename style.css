@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.card {
+  height: 96vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-section {
+  margin: 0;
+  width: 80%;
+  height: 30%;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-section img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.card-section > h1 {
+  color: hsl(0, 0%, 95%);
+  font-size: 1.5rem;
+}
+
+.card-section > p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+}
+.card-section > button {
+  max-width: 90px;
+  padding: 0.5rem;
+  border-radius: 16px;
+  border: none;
+}
+
+#sedans.card-section {
+  border-radius: 8px 8px 0 0;
+  background-color: hsl(31, 77%, 52%);
+}
+
+#sedans.card-section > button {
+  color: hsl(31, 77%, 52%);
+}
+
+#sedans.card-section > button:hover,
+#sedans.card-section > button:active {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+#suvs.card-section {
+  background-color: hsl(184, 100%, 22%);
+}
+
+#suvs.card-section > button {
+  color: hsl(184, 100%, 22%);
+}
+
+#suvs.card-section > button:hover,
+#suvs.card-section > button:active {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+
+#luxury.card-section {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 0 8px 8px;
+}
+
+#luxury.card-section > button {
+  color: hsl(179, 100%, 13%);
+}
+
+#luxury.card-section > button:hover,
+#luxury.card-section > button:active {
+  background-color: transparent;
+  border: 1px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%);
+}
+.attribution {
+  height: 4vh;
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  .card {
+    flex-direction: row;
+  }
+
+  .card-section {
+    width: 25%;
+    max-width: 280px;
+    height: 75%;
+    max-height: 400px;
+    padding: 2%;
+  }
+
+  .card-section > h1 {
+    font-size: 1.8rem;
+  }
+
+  .card-section > p {
+    line-height: 1.8rem;
+  }
+
+  .card-section > button {
+    max-width: 120px;
+    padding: 0.7rem;
+  }
+  #sedans.card-section {
+    border-radius: 8px 0 0 8px;
+  }
+
+  #luxury.card-section {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 8px 8px 0;
+  }
+}
